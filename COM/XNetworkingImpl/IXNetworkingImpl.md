@@ -20,3 +20,12 @@ Layout:
 - [XNetworkingGetConnectivityHint](https://learn.microsoft.com/gaming/gdk/docs/reference/networking/xnetworking/functions/xnetworkinggetconnectivityhint)
 - [XNetworkingRegisterConnectivityHintChanged](https://learn.microsoft.com/gaming/gdk/docs/reference/networking/xnetworking/functions/xnetworkingregisterconnectivityhintchanged)
 - [XNetworkingUnregisterConnectivityHintChanged](https://learn.microsoft.com/gaming/gdk/docs/reference/networking/xnetworking/functions/xnetworkingunregisterconnectivityhintchanged)
+
+## Known issues of titles requireing this feature
+
+Some titles run with more relaxed requirements.
+
+### Asphalt Legends
+https://www.xbox.com/en-US/games/store/asphalt-legends/9nzqpt0mwtd0
+
+XNetworkingGetConnectivityHint should not return 0 as ianaType, for the game to attempt XboxLive Authentication that is mandatory for this game to connect to the server.
